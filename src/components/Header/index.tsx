@@ -1,31 +1,25 @@
 'use client'
 
-import logo from './images/choran-logo.webp'
-import styles from './Header.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import logo from './images/choran-logo.webp'
+import styles from './Header.module.scss'
+import Button from '../Button'
+import scrollTo from '@/utils/scrollTo'
 
 export default function Header() {
     return (
         <header className={styles.container}>
-            <div className={styles.logo}>
-                <Image src={logo} alt='Agência' />
+            <div className={styles.logotipo}>
+                <Image src={logo} alt="Logo" />
             </div>
             <nav className={styles.menu}>
-                <ul>
-                    <li>
-                        <Link href='/'>PUV</Link>
-                    </li>
-                    <li>
-                        <Link href='/'>Formulário</Link>
-                    </li>
-                    <li>
-                        <Link href='/'>Solução</Link>
-                    </li>
-                </ul>
+                <Link href="/">PUV</Link>
+                <Link href="/">Formulário</Link>
+                <Link href="/">Solução</Link>
             </nav>
             <div className={styles.action}>
-                <button>Fale conosco</button>
+                <Button title="Fale conosco" onClick={() => scrollTo("contat")} />
             </div>
         </header>
     )
