@@ -2,9 +2,9 @@ import styles from './Button.module.scss'
 
 type ButtonProps = {
     title: string,
-    kind: string,
+    kind?: string,
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
-    type: "button" | "submit" | "reset",
+    type?: "button" | "submit" | "reset",
 }
 
 export default function Button({ title, kind, onClick, type }: ButtonProps) {
