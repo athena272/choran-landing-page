@@ -5,10 +5,10 @@ type ButtonProps = {
     kind?: string,
     onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
     type?: "button" | "submit" | "reset",
-    noClass?: boolean,
+    [key: string]: any; // Permite propriedades adicionais
 }
 
-export default function Button({ title, kind, onClick, type, noClass }: ButtonProps) {
+export default function Button({ title, kind, onClick, type, noClass, ...rest }: ButtonProps) {
     const generationClassByKind = () => {
         if (kind === "secundary") return styles.secundary;
         if (kind === "full") return styles.full;
@@ -21,6 +21,7 @@ export default function Button({ title, kind, onClick, type, noClass }: ButtonPr
             type={type}
             className={`${!noClass ? styles.button : null} ${generationClassByKind()}`}
             onClick={onClick}
+            {...rest} // Correção: Passando propriedades adicionais corretamente
         >
             {title}
         </button>

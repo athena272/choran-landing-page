@@ -23,6 +23,10 @@
     @include Tablet {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    @include Phone {
+        display: flex;
+    }
 }
 
 .menu {
@@ -55,5 +59,72 @@
 
     @include Tablet {
         display: none;
+    }
+}
+
+.menuMobile {
+    display: none;
+
+    @include Phone {
+        display: block;
+        position: relative;
+    }
+}
+
+.hamburgerButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: $purple-color;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: none;
+
+    @include Phone {
+        display: block;
+    }
+}
+
+.mobileNav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $white-color;
+    z-index: 1000;
+
+    &.active {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .closeButton {
+        position: absolute;
+        top: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: $purple-color;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: $purple-color;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+            background-color: rgba($purple-color, 0.1);
+        }
     }
 }

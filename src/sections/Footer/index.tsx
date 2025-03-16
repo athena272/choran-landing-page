@@ -29,8 +29,26 @@ export default function Footer() {
             </div>
             <div className={styles.column}>
                 <h1>CONTEÚDO</h1>
-                <p>E-books</p>
-                <p>Fórmulas prontas</p>
+                <p>
+                    <Link href={"https://choranmidias.com.br/trafego/"} target='_blank'>
+                        Anúncios Online
+                    </Link>
+                </p>
+                <p>
+                    <Link href={"https://choranmidias.com.br/landing-page/"} target='_blank'>
+                        Landing Pages
+                    </Link>
+                </p>
+                <p> 
+                    <Link href={"https://choranmidias.com.br/criativos/"} target='_blank'>
+                        Design
+                    </Link>
+                </p>
+                <p>
+                    <Link href={"https://choranmidias.com.br/consultoria/"} target='_blank'>
+                        Consultorias
+                    </Link>
+                </p>
             </div>
             <div className={`${styles.column}`}>
                 <h1>SOCIAL</h1>
