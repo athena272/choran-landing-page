@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import logo from './images/choran-logo.webp'
 import styles from './Header.module.scss'
 import Button from '../../components/Button'
