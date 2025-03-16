@@ -1,5 +1,5 @@
 import { InputHTMLAttributes } from "react";
-import styles from "./input.module.scss";
+import styles from "./Input.module.scss";
 
 // Tipagem para as propriedades do Input
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> { }
