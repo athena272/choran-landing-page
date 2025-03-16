@@ -16,6 +16,7 @@ interface FormValues {
     email: string;
     phone: string;
     segment: string;
+    description: string;
 }
 
 export default function Contact() {
@@ -29,6 +30,7 @@ export default function Contact() {
             email: "",
             phone: "",
             segment: "",
+            description: "",
         },
         validationSchema: Yup.object({
             name: Yup.string().required("Campo obrigatório"),
@@ -37,6 +39,10 @@ export default function Contact() {
                 .matches(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s./0-9]*$/, "Digite um telefone válido")
                 .required("Campo obrigatório"),
             segment: Yup.string().required("Selecione um segmento"),
+            description: Yup.string()
+                .min(10, "A descrição deve ter pelo menos 10 caracteres")
+                .max(500, "A descrição não pode ultrapassar 500 caracteres")
+                .required("Campo obrigatório"),
         }),
         validateOnChange: false,
         validateOnBlur: false,
@@ -47,7 +53,7 @@ export default function Contact() {
         setIsLoading(true);
         try {
             await axios.post("/api/sendEmail", {
-                messageBody: `Nome: ${values.name}, Email: ${values.email}, Telefone: ${values.phone}, Segmento: ${values.segment}`,
+                messageBody: `Nome: ${values.name}, Email: ${values.email}, Telefone: ${values.phone}, Segmento: ${values.segment}, Descrição: ${values.description}`,
             });
 
             formik.resetForm();
@@ -154,6 +160,17 @@ export default function Contact() {
                             required
                         />
                         {formik.errors.segment && <span className={styles.error}>{formik.errors.segment}</span>}
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            placeholder="Descreva brevemente sua situação"
+                            onBlur={formik.handleBlur}
+                            onChange={formik.handleChange}
+                            value={formik.values.description}
+                            className={styles.textarea}
+                        />
+                        {formik.errors.description && <span className={styles.error}>{formik.errors.description}</span>}
 
                         <Button type="submit" title="RECEBER INFORMAÇÕES" kind="full" onClick={() => console.log("Click on the button!")} />
                     </form>
