@@ -4,11 +4,11 @@
 
 .container {
     @include Padding; //Mixin
-    color: $white-color; //Variable
+    color: $purple-color ; //Variable
     padding-top: 34px;
     padding-bottom: 34px;
     width: 100%;
-    background-color: $purple-color;
+    background-color: $white-color;
     border-bottom: 0.5px solid $gray-color;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
