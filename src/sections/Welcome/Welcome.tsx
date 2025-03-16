@@ -8,15 +8,19 @@ export default function Welcome() {
     return (
         <div className={styles.container}>
             <div className={styles.text}>
-                <h1>Melhor agência de marketing do bairro</h1>
+                <h1>Fature <strong>R$100</strong> a <strong>R$500 mil</strong> em <strong>6 meses</strong> com uma <strong>estrutura de marketing</strong> criada para sua necessidade. <strong>Sistema de vendas
+                 previsível e escalável para sua empresa nunca parar de vender!</strong>
+                </h1>
                 <p>
-                    Somos uma agência de performance digital, aceleramos vendas e
-                    aquisição de leads para grandes marcas.
+                    Seja escalando o seu negócio ou criando um negócio digital do absoluto zero.
+                </p>
+                <p>
+                    Se o marketing da sua empresa não gera lucro real, você não tem um negócio. <strong>Tem um PROBLEMA</strong>. Nós <strong>RESOLVEMOS</strong>.
                 </p>
                 <Button
                     title="Aumentar vendas"
                     kind="secundary"
-                    onClick={() => scrollTo("contato")}
+                    onClick={() => scrollTo("contact")}
                 />
             </div>
             <div className={styles.image}>
