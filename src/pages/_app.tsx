@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>Choran Landing Page</title>
         <meta name="description" content="Choran Landing Page - A modern and interactive landing page built with Next.js and React." />
       </Head>
       <Component {...pageProps} />
