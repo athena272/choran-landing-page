@@ -10,7 +10,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 15px 3rem;
-    background-image: url("/images/fundoWelcome.svg");
+    background-image: url("./images/fundoWelcome.svg");
     background-repeat: no-repeat;
     background-size: cover; //rever
     margin-bottom: 10rem;
@@ -90,5 +90,10 @@
 
     @include Tablet {
         padding: 0 1rem;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 900;
     }
 }
