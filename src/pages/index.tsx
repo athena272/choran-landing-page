@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/sections/Header";
 import Welcome from "@/sections/Welcome/Welcome";
+import Contact from "@/sections/Contact";
 import Features from "@/sections/Features";
 import Footer from "@/sections/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Header />
       <Welcome />
+      <Contact />
       <Features />
       <Footer />
     </>
