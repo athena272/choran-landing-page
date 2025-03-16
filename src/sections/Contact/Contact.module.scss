@@ -101,3 +101,15 @@
         font-weight: 900;
     }
 }
+
+.textarea {
+    @include SizeNormal;
+    padding: 22px 17px;
+    background-color: $gray4-color;
+    border: none;
+    font-weight: 300;
+    color: $gray5-color;
+    opacity: 0.7;
+    border-radius: 10px;
+    resize: none;
+}
