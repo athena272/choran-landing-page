@@ -1,4 +1,6 @@
 import { MdTrendingUp, MdPersonAdd, MdAttachMoney, MdLockOpen } from 'react-icons/md';
+import Button from '@/components/Button';
+import scrollTo from '@/utils/scrollTo';
 import styles from './Features.module.scss';
 
 export default function Features() {
@@ -39,6 +41,8 @@ export default function Features() {
                     </p>
                 </div>
             </div>
+
+            <Button title='Agendar uma conversa' onClick={() => scrollTo("contact")} />
         </div>
     );
 }

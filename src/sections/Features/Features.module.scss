@@ -5,7 +5,7 @@
 
 .container {
     @include Padding;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -63,6 +63,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 68px;
+    margin-bottom: 50px;
 
     @include Phone {
         grid-template-columns: 1fr;
