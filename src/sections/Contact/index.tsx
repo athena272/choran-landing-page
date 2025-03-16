@@ -128,7 +128,26 @@ export default function Contact() {
                                 { label: "Educação", value: "educacao" },
                                 { label: "Imobiliário", value: "imobiliario" },
                                 { label: "Varejo", value: "varejo" },
-                                { label: "Outro", value: "outro" },
+                                { label: "Indústria", value: "industria" },
+                                { label: "Tecnologia", value: "tecnologia" },
+                                { label: "Alimentação", value: "alimentacao" },
+                                { label: "Beleza & Estética", value: "beleza" },
+                                { label: "Turismo & Hotelaria", value: "turismo" },
+                                { label: "Construção Civil", value: "construcao" },
+                                { label: "Entretenimento", value: "entretenimento" },
+                                { label: "Consultoria & Coaching", value: "consultoria" },
+                                { label: "Moda & Vestuário", value: "moda" },
+                                { label: "Automotivo", value: "automotivo" },
+                                { label: "Saúde Mental", value: "saude_mental" },
+                                { label: "Marketing & Publicidade", value: "marketing" },
+                                { label: "Esportes & Fitness", value: "esportes" },
+                                { label: "Jurídico & Advocacia", value: "juridico" },
+                                { label: "Recursos Humanos", value: "rh" },
+                                { label: "Agronegócio", value: "agronegocio" },
+                                { label: "Logística & Transporte", value: "logistica" },
+                                { label: "Energia & Sustentabilidade", value: "energia" },
+                                { label: "Eventos & Produção Cultural", value: "eventos" },
+                                { label: "Outro", value: "outro" }
                             ]}
                             onChange={formik.handleChange}
                             value={formik.values.segment}
