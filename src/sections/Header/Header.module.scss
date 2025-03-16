@@ -27,9 +27,18 @@
 
 .menu {
     font-size: 22px;
+    display: flex;
+    gap: 16px;
 
-    a+a {
-        margin-left: 38.9px;
+    button {
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: $purple-color;
+        border: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     @include Phone {

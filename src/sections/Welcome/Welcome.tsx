@@ -6,7 +6,7 @@ import styles from './Welcome.module.scss'
 
 export default function Welcome() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='welcome'>
             <div className={styles.text}>
                 <h1>Fature <strong>R$100</strong> a <strong>R$500 mil</strong> em <strong>6 meses</strong> com uma <strong>estrutura de marketing</strong> criada para sua necessidade. <strong>Sistema de vendas
                  previsível e escalável para sua empresa nunca parar de vender!</strong>

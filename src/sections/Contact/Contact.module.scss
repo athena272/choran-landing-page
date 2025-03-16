@@ -43,7 +43,7 @@
 
     p {
         @include SizeNormal;
-        font-weight: 300;
+        font-weight: 800;
         color: #FFCC00;
     }
 }
@@ -54,7 +54,7 @@
     border: 0.5px solid $gray3-color;
     border-radius: 10px;
 
-    h1 {
+    h2 {
         color: $purple-color;
         font-weight: bold;
         @include SizeMedium;

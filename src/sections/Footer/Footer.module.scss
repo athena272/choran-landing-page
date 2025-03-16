@@ -37,6 +37,17 @@
     p {
         @include SizeSmall;
         color: $purple3-color;
+
+        button {
+            @include SizeSmall;
+            background-color: transparent;
+            color: $purple3-color;
+            border: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &.alignRight {

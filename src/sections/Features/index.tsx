@@ -1,47 +1,41 @@
-import Image from "next/image";
-import styles from './Features.module.scss'
-import Icon from './images/icon.svg'
+import { MdTrendingUp, MdPersonAdd, MdAttachMoney, MdLockOpen } from 'react-icons/md';
+import styles from './Features.module.scss';
 
 export default function Features() {
     return (
-        <div className={styles.container}>
-            <h1>Neste bairro, não há agência melhor. Garantimos.</h1>
+        <div className={styles.container} id='features'>
+            <h2>O que a Choran entrega</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
+                Se você está investindo e não está vendo retorno, não é um problema do digital. <strong>É um problema de estratégia</strong>.
             </p>
 
             <div className={styles.features}>
                 <div className={styles.feature}>
-                    <Image src={Icon} alt="Icon" className={styles.icon} />
-                    <h1>Digital Strategy</h1>
+                    <MdTrendingUp className={styles.icon} size={72} />
+                    <h3>Crescimento Escalável</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna.
+                        Escalamos empresas para múltiplos 5 dígitos/mês com previsibilidade.
                     </p>
                 </div>
                 <div className={styles.feature}>
-                    <Image src={Icon} alt="Icon" className={styles.icon} />
-                    <h1>Digital Strategy</h1>
+                    <MdPersonAdd className={styles.icon} size={72} />
+                    <h3>Aquisição Otimizada</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna.
+                        Reduzimos o custo de aquisição em até X% enquanto aumentamos as conversões.
                     </p>
                 </div>
                 <div className={styles.feature}>
-                    <Image src={Icon} alt="Icon" className={styles.icon} />
-                    <h1>Digital Strategy</h1>
+                    <MdAttachMoney className={styles.icon} size={72} />
+                    <h3>Maximização de Receitas</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna.
+                        Multiplicamos a recorrência e o ticket médio sem aumentar seu investimento em tráfego.
                     </p>
                 </div>
                 <div className={styles.feature}>
-                    <Image src={Icon} alt="Icon" className={styles.icon} />
-                    <h1>Digital Strategy</h1>
+                    <MdLockOpen className={styles.icon} size={72} />
+                    <h3>Desbloqueio de Gargalos</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna.
+                        Eliminamos gargalos invisíveis que bloqueiam seu crescimento.
                     </p>
                 </div>
             </div>

@@ -14,12 +14,12 @@ export default function Header() {
                 <Image src={logo} alt="Logo" />
             </div>
             <nav className={styles.menu}>
-                <Link href="/">PUV</Link>
-                <Link href="/">Formulário</Link>
-                <Link href="/">Solução</Link>
+                <Button title='PUV' onClick={() => scrollTo('welcome')} noClass={true} />
+                <Button title='Formulário' onClick={() => scrollTo("contact")} noClass={true} />
+                <Button title='Solução' onClick={() => scrollTo("features")} noClass={true} />
             </nav>
             <div className={styles.action}>
-                <Button title="Fale conosco" onClick={() => scrollTo("contat")} />
+                <Button title="Fale conosco" onClick={() => scrollTo("contact")} />
             </div>
         </header>
     )
