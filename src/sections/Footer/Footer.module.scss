@@ -1,0 +1,77 @@
+@import "/src/styles/mixins/padding.scss";
+@import "/src/styles/mixins/colors.scss";
+@import "/src/styles/mixins/responsive.scss";
+@import "/src/styles/mixins/fonts.scss";
+
+.container {
+    @include Padding;
+    padding-top: 72px;
+    background-color: $white-color;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include Phone {
+        grid-template-columns: 1fr;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+}
+
+.column {
+    margin-top: 4.5rem;
+
+    &.columnPrincipal {
+        margin-top: 0px;
+    }
+
+    .title {
+        @include SizeNormal;
+        color: $purple3-color;
+    }
+
+    h1 {
+        @include SizeSmall;
+        color: $green2-color;
+    }
+
+    p {
+        @include SizeSmall;
+        color: $purple3-color;
+    }
+
+    &.alignRight {
+        text-align: right;
+    }
+
+    .icons {
+        display: inline-grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            filter: invert(100%);
+        }
+    }
+
+    @include Phone {
+        margin-top: 0px;
+
+        &.alignRight {
+            text-align: left;
+        }
+    }
+}
+
+.allRightReserved {
+    @include SizeSmall;
+    padding: 6rem 0 1rem;
+    color: #000;
+    grid-column: span 4;
+    text-align: center;
+
+    @include Phone {
+        grid-column: 1;
+    }
+}
