@@ -1,40 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 Choran Landing Page
 
-## Getting Started
+The **Choran Landing Page** is a modern and highly interactive project developed with **Next.js** and **React**. 
+Designed for conversions, it features a validated form system, optimized styling, and reusable components that ensure a smooth and responsive user experience. 💻✨
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ⚡ **Next.js 15.2.2** - Framework for React applications with server-side rendering
+- ⚛️ **React 19** - Library for building dynamic interfaces
+- 🔷 **TypeScript 5** - Superset of JavaScript for static typing
+- 🎨 **Sass** - CSS extension for optimized styling
+- 🔗 **Axios** - HTTP client for API consumption
+- 📋 **Formik** - Library for handling forms
+- ✅ **Yup** - Form validation
+- 📧 **EmailJS** - Integration for sending emails without a backend
+- 🔤 **React Icons** - Icon library for React
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## ✨ Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+✅ **Responsive landing page** compatible with mobile devices 📱💻
+✅ **Contact form** integrated with EmailJS 📩
+✅ **Advanced form validation** using Formik and Yup ✅
+✅ **Dynamic modals** for success and error messages 🔄
+✅ **API consumption** with Axios 🔗
+✅ **Reusable components** for better scalability 🔄
+✅ **Modern and optimized design** with Sass 🎨
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 How to Run the Project
 
-To learn more about Next.js, take a look at the following resources:
+1️⃣ Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/choran-landing-page.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+2️⃣ Navigate to the project directory:
+   ```sh
+   cd choran-landing-page
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3️⃣ Install dependencies:
+   ```sh
+   npm install
+   # or
+   pnpm install
+   ```
 
-## Deploy on Vercel
+4️⃣ Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5️⃣ Open in your browser: `http://localhost:3000` 🌐
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+If you want to contribute to this project, follow these steps:
+
+1️⃣ Fork the repository 🍴
+2️⃣ Create a branch for your changes: `git checkout -b my-new-feature`
+3️⃣ Commit your changes: `git commit -m '🚀 Add new feature'`
+4️⃣ Push to your branch: `git push origin my-new-feature`
+5️⃣ Open a **Pull Request** 🔃
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details. 📄
+
