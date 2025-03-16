@@ -12,21 +12,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @include Phone {
-        height: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content;
-        padding-top: 1rem;
-    }
+    & {
+        @include Phone {
+            height: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content;
+            padding-top: 1rem;
+        }
 
-    @include Tablet {
-        height: 100%;
-        margin-bottom: 4rem;
-        padding-top: 4rem;
-    }
+        @include Tablet {
+            height: 100%;
+            margin-bottom: 4rem;
+            padding-top: 4rem;
+        }
 
-    @include Laptop {
-        padding-top: 6rem;
+        @include Laptop {
+            padding-top: 6rem;
+        }
     }
 }
 
