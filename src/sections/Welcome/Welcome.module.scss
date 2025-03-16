@@ -38,13 +38,13 @@
     font-weight: 400;
     
     strong {
-      font-weight: 700
+      font-weight: 800;
     }
   }
 
   p {
     @include SizeNormal;
-    opacity: .85;
+    opacity: .95;
   }
 }
 

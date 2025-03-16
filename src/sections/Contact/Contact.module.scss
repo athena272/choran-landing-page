@@ -13,7 +13,7 @@
     background-image: url("./images/fundoWelcome.svg");
     background-repeat: no-repeat;
     background-size: cover; //rever
-    margin-bottom: 10rem;
+    margin: 5rem auto;
 
     @include Phone {
         grid-template-columns: 1fr;
@@ -32,15 +32,19 @@
         color: $green2-color;
     }
 
-    h1 {
+    h2 {
         @include SizeLarge;
-        font-weight: bold;
+        font-weight: 400;
+
+        strong {
+            font-weight: 800;
+        }
     }
 
     p {
         @include SizeNormal;
         font-weight: 300;
-        opacity: 0.7;
+        color: #FFCC00;
     }
 }
 

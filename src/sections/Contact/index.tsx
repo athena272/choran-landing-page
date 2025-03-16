@@ -73,7 +73,7 @@ export default function Contact() {
             <div className={styles.container} id="contact">
                 <div className={styles.texts}>
                     <span>ENTRE EM CONTATO</span>
-                    <h1>Soluções de marketing para os mais diversos negócios de diversos tamanhos.</h1>
+                    <h2>Soluções de marketing para os mais <strong>diversos negócios</strong> de <strong>diversos tamanhos.</strong></h2>
                     <p>Preencha o formulário</p>
                 </div>
 

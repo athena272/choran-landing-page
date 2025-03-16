@@ -20,8 +20,8 @@ export default function Home() {
     <>
       <Header />
       <Welcome />
-      <Features />
       <Contact />
+      <Features />
       <Footer />
     </>
   );
