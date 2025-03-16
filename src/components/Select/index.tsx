@@ -1,5 +1,5 @@
 import { SelectHTMLAttributes } from "react";
-import styles from "./select.module.scss";
+import styles from "./Select.module.scss";
 
 // Tipagem das opções do Select
 interface Option {
