@@ -22,8 +22,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
         const message = await client.sendAsync({
             text: messageBody,
-            from: "acadamyfront595@gmail.com",
-            to: "acadamyfront595@gmail.com",
+            from: "guilhermera272@gmail.com",
+            to: "guilhermera272@gmail.com",
             subject: "Choran - Landingpage",
         });
 
